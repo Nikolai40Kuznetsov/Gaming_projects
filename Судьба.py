@@ -25,17 +25,17 @@ def Fight(fighter_1, fighter_2):
 
 class Servant:
     
-    def __init__(self, name, health, attack, stregth):
+    def __init__(self, name, health, attack, strength):
         self.name = name
         self.health = health
         self.attack = attack
-        self.stregth = stregth
+        self.strength = strength
 
     def introduce(self):
         print(f"Меня зовут {self.name}")
         
     def strike(self):
-        strike_damage = ran.randint(1, self.attack) + self.stregth
+        strike_damage = ran.randint(1, self.attack) + self.strength
         return strike_damage
    
    
