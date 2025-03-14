@@ -20,9 +20,7 @@ def Fight(fighter_1, fighter_2):
             a.health -= int(b.strike())
             if a.health <= 0:
                 print(f"{b.name} побеждает!")
-    
-            
-
+              
 class Servant:
     
     def __init__(self, name, health, attack, strength):
@@ -37,8 +35,7 @@ class Servant:
     def strike(self):
         strike_damage = ran.randint(1, self.attack) + self.strength
         return strike_damage
-   
-   
+     
 Spartak = Servant("Спартак", 30, 10, 4)
 Arthur = Servant("Король Артур", 40, 8, 3)
 Fight(Spartak, Arthur)
